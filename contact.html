@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css">
+    
+  <style>
+    h2 {
+        text-align: center;
+    }
+    form {
+      width: 600px;
+      margin: auto;
+      background-color: #d9b4e8;
+      padding-left: 20px;
+      padding: 5px;
+    }
+
+    form legend {
+      font-size: larger;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>PROJECT: Email Contact Form </h2>
+        </header>
+        <section class="frame">
+
+            <form id="form1" name="contact" method="post" action="formHandler.php">
+                <h2>Contact Form:</h2>
+                <legend></legend>
+
+                <p>
+                    <label class="label" for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required />
+                </p>
+
+                <p>
+                    <label class="label" for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required />
+                </p>
+
+                <p>
+                    <label class="label" for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="sample@email.com" required />
+                </p>
+
+                <p>
+                    <label class="label" for="reason">Reason for contact: </label>
+                    <select id="reason" name="reason" required>
+                        <option value="default" selected disabled>Select a Reason</option>
+                        <option value="opinion">Opinions</option>
+                        <option value="support">Support</option>
+                        <option value="question">Questions</option>
+                        <option value="job">Career</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label class="label" type="text" id="comments">Comments: </label>
+                </p>
+                <p>
+                    <textarea name="comments" id="comments" rows="5" cols="45" placeholder="Insert Comments Here"
+                    maxlength="200" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset">
+                </p>
+            </form>
+
+        </section>
+       
+    </div>
+</body>
+
+</html>
